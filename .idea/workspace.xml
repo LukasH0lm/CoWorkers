@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="742bc099-5396-47b1-871c-b2008877e6b4" name="Changes" comment="improved readability of output" />
+    <list default="true" id="742bc099-5396-47b1-871c-b2008877e6b4" name="Changes" comment="improved readability of code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +32,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lukas/IdeaProjects/MedArbejdere&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/lukas/IdeaProjects/MedArbejdere",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -63,7 +69,10 @@
       <workItem from="1664212880329" duration="785000" />
       <workItem from="1664288276039" duration="23000" />
       <workItem from="1664306481839" duration="3493000" />
-      <workItem from="1664310889536" duration="1574000" />
+      <workItem from="1664310889536" duration="2551000" />
+      <workItem from="1664315208081" duration="67000" />
+      <workItem from="1664315296734" duration="38000" />
+      <workItem from="1664315354279" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664309422797</created>
@@ -86,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664312808935</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="improved readability of output">
+      <created>1664312849078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664312849078</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +122,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="improved readability of output" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved readability of output" />
+    <MESSAGE value="improved readability of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved readability of code" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

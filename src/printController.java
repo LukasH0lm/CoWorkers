@@ -19,70 +19,23 @@ public class printController {
             System.out.println("to view existing workers press 2 ");
             System.out.println("to review salaries press 3 ");
             System.out.print("select: ");
-
-            String choice = scanner.nextLine();
-            if (Objects.equals(choice, "1")) {
-
-                addWorkers();
-
-
-            } else if (Objects.equals(choice, "2")){
-                for (CoWorker coWorker : WorkerList) {
-                    System.out.println(coWorker.getName() + " / " + coWorker.getId() + " / " + coWorker.getSalary());
+            int choice = parseInt(scanner.nextLine());
+            switch (choice) {
+                case 1:
+                    addWorkers();
+                    break;
+                case 2:
+                    viewWorkers();
+                    break;
+                case 3:
+                    reviewSalaries();
+                    break;
+                default:
+                    System.out.println("Invalid choice");
             }
-                System.out.print("...");
-                scanner.nextLine();
-            } else if (Objects.equals(choice, "3")) {
-
-                System.out.println("To view the employee with the lowest salary, press 1");
-                System.out.println("To view the employee with the highest salary, press 2");
-
-                String bøfChoice = scanner.nextLine();
-                if (Objects.equals(bøfChoice, "1")){
-
-                    int lowestSalary = Integer.MAX_VALUE;
-                    CoWorker lowestSalaryCoworker = null;
-                    for (CoWorker coWorker : WorkerList) {
-                        if (coWorker.salary < lowestSalary){
-                            lowestSalary = coWorker.salary;
-                            lowestSalaryCoworker = coWorker;
+        }}
 
 
-                        }
-
-                    }
-                    System.out.println(lowestSalaryCoworker.getName());
-                    System.out.println(lowestSalary);
-                    System.out.print("...");
-                }
-                else if (Objects.equals(bøfChoice, "2")){
-                    int highestSalary = 0;
-                    CoWorker highestSalaryCoworker = null;
-                    for (CoWorker coWorker : WorkerList) {
-                        if (coWorker.salary > highestSalary){
-                            highestSalary = coWorker.salary;
-                            highestSalaryCoworker = coWorker;
-
-                }}
-                    System.out.println(highestSalaryCoworker.getName());
-                    System.out.println(highestSalary);
-                    System.out.print("...");
-
-                } else {
-                    System.out.println("BøfChoice");
-
-                }
-
-
-            } else {
-
-                System.out.println("please make a valid selection");
-
-                }
-
-
-            }
-        }
         public static void addWorkers(){
         while (true){
 
@@ -108,6 +61,28 @@ public class printController {
         }
 
         }
+public static void viewWorkers(){
+        for (CoWorker coWorker : WorkerList) {
+            System.out.println(coWorker.getName() + " / " + coWorker.getId() + " / " + coWorker.getSalary());
+        }
+        System.out.print("...");
+        scanner.nextLine();
+        }
+public static void reviewSalaries(){
+        System.out.println("To view the employee with the lowest salary, press 1");
+        System.out.println("To view the employee with the highest salary, press 2");
 
-    }
+        String bøfChoice = scanner.nextLine();
+        if (Objects.equals(bøfChoice, "1")){
+
+            int lowestSalary = Integer.MAX_VALUE;
+            CoWorker lowestSalaryCoworker = null;
+            for (CoWorker coWorker : WorkerList) {
+                if (coWorker.salary < lowestSalary){
+                    lowestSalary = coWorker.salary;
+                    lowestSalaryCoworker = coWorker;
+
+    }}}}
+
+}
 
