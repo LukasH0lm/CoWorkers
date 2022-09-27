@@ -53,7 +53,7 @@ public class printController {
                     }
                     System.out.println(lowestSalaryCoworker.getName());
                     System.out.println(lowestSalary);
-
+                    System.out.print("...");
                 }
                 else if (Objects.equals(bøfChoice, "2")){
                     int highestSalary = 0;
@@ -66,7 +66,8 @@ public class printController {
                 }}
                     System.out.println(highestSalaryCoworker.getName());
                     System.out.println(highestSalary);
-                
+                    System.out.print("...");
+
                 } else {
                     System.out.println("BøfChoice");
 
@@ -76,7 +77,6 @@ public class printController {
             } else {
 
                 System.out.println("please make a valid selection");
-                menu();
 
                 }
 
@@ -86,7 +86,7 @@ public class printController {
         public static void addWorkers(){
         while (true){
 
-            System.out.println("Please enter information about your new worker");
+            System.out.println("Please enter information about your new worker, type \"stop\" to stop adding employees");
 
             System.out.print("Name: ");
             String choiceName = scanner.nextLine();
