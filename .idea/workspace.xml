@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742bc099-5396-47b1-871c-b2008877e6b4" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="742bc099-5396-47b1-871c-b2008877e6b4" name="Changes" comment="improved readability of output" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +63,7 @@
       <workItem from="1664212880329" duration="785000" />
       <workItem from="1664288276039" duration="23000" />
       <workItem from="1664306481839" duration="3493000" />
-      <workItem from="1664310889536" duration="1274000" />
+      <workItem from="1664310889536" duration="1574000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664309422797</created>
@@ -82,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664310940924</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="improved readability of output">
+      <created>1664312808935</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664312808935</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="improved readability of output" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved readability of output" />
   </component>
 </project>
