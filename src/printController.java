@@ -8,7 +8,6 @@ import static java.lang.Integer.parseInt;
 
 public class printController {
 
-    @SuppressWarnings("ALL")
     static CoWorker[] WorkerList = Main.WorkerList;
     static Scanner scanner = new Scanner(System.in);
     public static int currentId = 26;
@@ -33,7 +32,6 @@ public class printController {
                 default -> System.out.println("Invalid choice");
             }
         }}
-
 
         public static void addWorkers(){
         while (true){
