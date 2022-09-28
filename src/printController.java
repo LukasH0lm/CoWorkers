@@ -14,24 +14,23 @@ public class printController {
     public static int currentId = 26;
     public static void menu() {
         while (true) {
+            System.out.println("------------------------------------------------------------");
             System.out.println("Welcome to the HolmTech Worker Management program ");
-            System.out.println("to add new workers press 1 ");
-            System.out.println("to view existing workers press 2 ");
-            System.out.println("to review salaries press 3 ");
+            System.out.println("------------------------------------------------------------");
+            System.out.println("1: add new workers press ");
+            System.out.println("2: view existing workers ");
+            System.out.println("3: review salaries ");
+            System.out.println("4: exit ");
             System.out.print("select: ");
+
             int choice = parseInt(scanner.nextLine());
+
             switch (choice) {
-                case 1:
-                    addWorkers();
-                    break;
-                case 2:
-                    viewWorkers();
-                    break;
-                case 3:
-                    reviewSalaries();
-                    break;
-                default:
-                    System.out.println("Invalid choice");
+                case 1 -> addWorkers();
+                case 2 -> viewWorkers();
+                case 3 -> reviewSalaries();
+                case 4 -> System.exit(0);
+                default -> System.out.println("Invalid choice");
             }
         }}
 
@@ -82,7 +81,30 @@ public static void reviewSalaries(){
                     lowestSalary = coWorker.salary;
                     lowestSalaryCoworker = coWorker;
 
-    }}}}
+    }}
+            assert lowestSalaryCoworker != null;
+            System.out.println("The employee with the lowest salary is " + lowestSalaryCoworker.getName() + " with a salary of " + lowestSalaryCoworker.getSalary());
+            System.out.print("...");
+            scanner.nextLine();
+
+
+        } else if (Objects.equals(bøfChoice, "2")){
+
+            int highestSalary = Integer.MIN_VALUE;
+            CoWorker highestSalaryCoworker = null;
+            for (CoWorker coWorker : WorkerList) {
+                if (coWorker.salary > highestSalary){
+                    highestSalary = coWorker.salary;
+                    highestSalaryCoworker = coWorker;
+    }
 
 }
+            assert highestSalaryCoworker != null;
+            System.out.println("The employee with the highest salary is " + highestSalaryCoworker.getName() + " with a salary of " + highestSalaryCoworker.getSalary());
+            System.out.print("...");
+            scanner.nextLine();
+        }
+        }
+        }
+
 
